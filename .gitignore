@@ -1,0 +1,67 @@
+
+*.pyc
+*.pyo
+__pycache__/
+
+
+venv/
+ENV/
+env/
+.venv/
+.virtualenv/
+
+
+*.egg
+*.egg-info
+dist/
+build/
+*.tar.gz
+*.whl
+*.zip
+
+
+*.log
+
+
+# VSCode
+.vscode/
+# PyCharm
+.idea/
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+# Eclipse
+.project
+.pydevproject
+
+
+.DS_Store  # macOS
+Thumbs.db  # Windows
+Desktop.ini # Windows
+
+
+*.swp
+*.swo
+*.bak
+
+
+*.env
+*.ini
+*.json
+*.yaml
+
+# jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# pyinstaller
+*.spec
+
+# Coverage reports
+.coverage
+.coverage.*
+nosetests.xml
+test_*.xml
+*.coveragerc
+
+# ckpt
+ckpt/

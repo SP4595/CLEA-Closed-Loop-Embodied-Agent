@@ -1,0 +1,35 @@
+API_Provider:
+    api_key: "sk-XXXXXX" # Your API Key
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1" # base url for aliyun
+
+models:
+    VLM: "qwen2.5-vl-72b-instruct"
+    LLM: "qwen2.5-72b-instruct"
+
+paths:
+    prompt: "./CLEA/templates/prompts"
+    knowledge: "./CLEA/templates/Knowledge/knowledge.txt"
+
+navigation_points:
+    - "in_front_of_table"
+    - "in_front_of_refrigerator"
+    - "in_front_of_oven"
+    - "in_front_of_sink"
+
+interactive_objects:
+    - "bottle_of_tea"
+    - "refrigerator"
+    - "oven"
+    - "hamburger"
+    - "vitamin_pills"
+    - "green_medication"
+    - "trash_can"
+    - "drawer_top"
+    - "drawer_middle"
+    - "table"
+
+function_filter_list: # List that is in the API/API.py but should not call by Agent 
+    - "observe"
+
+# The task you want agent to do
+task: "Find and throw bottol_of_tea and vitamin_pile to the trash bin" 
